@@ -1,0 +1,97 @@
+
+
+
+
+
+let title = document.querySelector('.cover-title')
+
+title.addEventListener('mouseover', function(){
+
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+    title.style.setProperty('color', 'rgb(' +red+ ',' +green+ ',' +blue+ ')');
+
+})
+
+let places = document.querySelector('.header')
+
+places.addEventListener('mouseover', function(){
+
+    let red1 = Math.floor(Math.random() * 255);
+    let green1 = Math.floor(Math.random() * 255);
+    let blue1 = Math.floor(Math.random() * 255);
+    places.style.setProperty('color', 'rgb(' +red1+ ',' +green1+ ',' +blue1+ ')');
+
+})
+
+// let button = document.querySelector('.title-next');
+// let image = 1
+
+// button.addEventListener('click', function(){
+// let imageObject = document.querySelector('.cover-image img');
+// let gallery = ['assets/ркеркен.jpeg', 'assets/1.jpeg', 'assets/scale_1200.jpeg']
+
+//     if (image == gallery.length) {
+//         image = 0
+//     };
+//     imageObject.setAttribute('src', gallery[image]);
+//     image++;
+
+// })
+
+
+// let today = new Date();
+
+// let time = today.getHours() + ':' + today.getMinutes();
+
+// document.querySelector('.time-clock').innerHTML = time
+
+
+// let ipcountry = new XMLHttpRequest()
+// ipcountry.open('GET', 'https://api.country.is', true)
+// ipcountry.onreadystatechange = function(){
+//     if (ipcountry.readyState ==4){
+//         if (ipcountry.status == 200) {
+//             let data = JSON.parse(ipcountry.responseText)
+//             let country = data.country
+//             let visitor = document.querySelector('.country-code')
+//             visitor.innerHTML = country
+//         }
+//     }
+// }
+
+// ipcountry.send(null)
+
+// let weather = new XMLHttpRequest()
+// weather.open('GET', 'https://goweather.herokuapp.com/weather/Tver', true)
+// weather.onreadystatechange = function(){
+//     if (weather.readyState ==4){
+//         if (weather.status == 200) {
+//             let data = JSON.parse(weather.responseText)
+//             let temperature = data.temperature
+//             let description = data.description
+//             let forecast = document.querySelector('.weather-api')
+//             forecast.innerHTML = temperature + ' — ' + description
+
+
+//             let temperatureTommorow = data.forecast[0].temperature
+//             let windTomorrow = data.forecast[0].wind
+//             let forecastTommorow = document.querySelector('.weather-api-tommorow')
+//             forecastTommorow.innerHTML = temperatureTommorow + ' & Wind ' + windTomorrow
+            
+//         }
+//     }
+// }
+
+// weather.send(null)
+
+// let buttonImage = document.querySelector('.button-text')
+
+// buttonImage.addEventListener('click', function(){
+//     let e = document.querySelector('.hidden-image')
+//     if(e.style.display == 'flex')
+//     e.style.display = 'none'
+//     else
+//     e.style.display = 'flex'
+// })
